@@ -1,7 +1,174 @@
-header{
-  text-align: center;
-  width: 500px;
-  height: 200px;
-
-border: 3px solid black;
+body {
+    
+ color: darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trebuchet MS";
+  font-size: 1.5em;
 }
+
+#h1 {
+  margin-left: 150px;
+    
+}
+
+
+section {
+  width: 40%;
+  padding: 20px;
+  min-width: 300px;
+  background: white;
+  border-radius: 10px;
+}
+
+input, select, textarea {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+}
+textarea{
+    margin-left: 150px;
+}
+
+input[type=text]:focus {
+    outline: 0;
+}
+
+input[type=submit] {
+    outline: 0;
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   }
+input[type=submit]:hover{
+    background: pink;
+}
+
+#prenom{
+    
+    width: 500px;
+    height: 50px;
+}
+
+#prenom:hover{
+    color: plum;
+
+}
+
+#mail{
+    
+    width: 500px;
+    height: 50px;
+}
+
+#mail:hover{
+    color: plum;
+
+}
+
+#metier{
+
+    width: 500px;
+    height: 50px;
+}
+
+#metier:hover{
+    color: plum;
+
+}
+.name{
+    margin-left: 300px;
+}
+.message{
+    margin-left: 100px;
+  
+}
+.mail{
+    text-align: center;
+}
+.button{
+    margin-left: 280px;
+}
+.button:hover{
+    background: blue;
+    
+}
+
+#select{
+    margin-left: 400px;
+}
+
+
+/* Début Challenge 2 */
+
+.vador {
+  display: inline;
+  vertical-align: middle;
+  visibility: visible;
+  /* this opacity property hides the vador */
+  opacity: 0;
+  margin-top: -10px;
+}
+#p {
+    margin-top: 300px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes slidein {
+  from {
+      margin-top: 300px;
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+      margin-top: 300px;
+    margin-left: 150%;
+    width: 100%;
+      color: white;
+  }
+}
+@media screen and (max-width: 1024px)
+    {
+        #p{
+            display: none;
+        }
+        
+        #h1{
+            margin-left: 10px;
+            text-align: center;
+        }
+        #textarea{
+            margin-left: 70px;
+        }
+        
+        @media screen and (max-width: 480px)
+    {
+        #p{
+            display: none;
+        }
+        
+        #h1{
+            margin-left: 10px;
+            text-align: center;
+        }
+
+
+
+
+
+ 
+/* Fin Challenge 2 */

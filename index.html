@@ -1,17 +1,67 @@
 <!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <h1 id="h1">Formulaire de contact</h1>
 
-</head>
-<header>
-    <h1> Landing Page </h1>
-
-</header>
-<body>
-
-
-</body>
+      <form name="inscription" method="post" action="validation.php">
+  
+    <div id="prenom"> 
+    Prénom :<input type="text" name="prenom" /> <br>
+          </div>
+          
+    <div id="mail">
+    Ton mail :<input type="email" name="courriel" /> <br>
+          </div>
+    
+    <div id="metier"> Que fais-tu dans la vie ?
+    
+    <select name="metier" >
+            
+            <option value="Danseur">Boucher</option> 
+            <option value="Chasseur">Chasseur</option>
+            <option value="Pecheur">Pecheur</option>
+    
+    </select>
+          </div>
+    
+    <br>
+        
+       
+          <textarea id="textarea" name="message"></textarea>
+    <div>
+        
+        <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+        <label for="subscribeNews">Souhaitez-vous vous abonner à la newsletter ?</label>
+   
+    </div>
+  
+          
+  
+            <INPUT TYPE="submit" NAME="nom" VALUE="Envoyer" />
+            <p id="p"> N'oubliez pas de vous abonnez à nôtre NewsLetter ! </p>
+          
+          
+</form>
+        <a class='twitter-timeline'
+   href='https://twitter.com/'
+   data-widget-id=''
+   data-screen-name=''
+   data-theme='light'
+   data-show-replies='true'
+   data-link-color='#00acee'
+   data-border-color='#e8e8e8'
+   width='520'
+   height='600'
+   lang='fr'
+   target='_blank' >
+Tweet
+</a>
+        
+    </section>
+  </body>
 </html>
